@@ -7,7 +7,31 @@
     <title>Porcentajes y Descuentos</title>
   </head>
   <body>
-    <h1>Porcentajes y Descuentos</h1>
+    <header class="header">
+      <h1>Porcentajes y Descuentos</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Calculadora de precio con descuento</h2>
+        <div class="form-container">
+          <form action="">
+            <label for="inputPrice">Precio</label>
+            <input id="inputPrice" type="number" />
+            <label for="inputDiscount">Descuento</label>
+            <input id="inputDiscount" type="number" />
+            <label for="discount-cupon">Cupon de descuento</label>
+            <select name="" id="discount-cupon">
+              <option value="0">No tengo cupon</option>
+              <option value="Silver">Cupon de Plata</option>
+              <option value="Gold">Cupon Oro</option>
+              <option value="Diamond">Cupon Diamante</option>
+            </select>
+            <button type="button" onclick="priceCalculator()">Calcular</button>
+            <p id="newPrice"></p>
+          </form>
+        </div>
+      </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
