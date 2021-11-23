@@ -1,0 +1,161 @@
+:root {
+  --dark-green: #264653;
+  --light-green: #2a9d8f;
+  --mustard: #e9c46a;
+  --light-orange: #f4a261;
+  --dark-orange: #e76f51;
+  --white: white;
+  --black: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.header {
+  background-color: var(--dark-green);
+  color: var(--mustard);
+  text-align: center;
+}
+
+.header h1 {
+  padding: 1rem 0;
+}
+
+.main-section {
+  background-color: var(--light-green);
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section h2 {
+  padding: 3rem 0;
+}
+
+.form-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 0.2rem var(--mustard) solid;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.input-price {
+  border: 0.2rem var(--mustard) solid;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 0.5rem 0;
+  margin: 0 0.5rem 1rem 0.5rem;
+  width: 100%;
+}
+
+.input-price:hover {
+  box-shadow: 0 1px 6px 0 var(--dark-green);
+}
+
+.input-price label {
+  cursor: pointer;
+}
+
+.input-price input {
+  max-width: 15rem;
+  border: none;
+  cursor: pointer;
+}
+
+.input-discount {
+  border: 0.2rem var(--mustard) solid;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 0.5rem 0.2rem;
+  margin: 0 0.5rem 1rem 0.5rem;
+  width: 100%;
+}
+
+.input-discount:hover {
+  box-shadow: 0 1px 6px 0 var(--dark-green);
+}
+
+.input-discount label {
+  cursor: pointer;
+}
+
+.input-discount input {
+  max-width: 12rem;
+  border: none;
+  cursor: pointer;
+}
+
+.discount-cupon {
+  border: 0.2rem var(--mustard) solid;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 0.5rem 0;
+  margin: 0 0.5rem 1rem 0.5rem;
+  width: 100%;
+}
+
+.discount-cupon:hover {
+  box-shadow: 0 1px 6px 0 var(--dark-green);
+}
+
+.discount-cupon label {
+  cursor: pointer;
+}
+
+.discount-cupon select {
+  max-width: 20rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button button {
+  background-color: var(--dark-green);
+  color: var(--mustard);
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.button button:hover {
+  box-shadow: 0 1px 6px 0 var(--dark-green);
+}
+
+.final-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  border: 0.2rem var(--mustard) solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: var(--white);
+}
+
+.final-price #newPrice {
+  margin-left: 9rem;
+}

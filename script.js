@@ -33,5 +33,5 @@ function priceCalculator() {
 
   const newTotalPrice = document.getElementById("newPrice");
 
-  newTotalPrice.innerText = newPrice + " $";
+  newTotalPrice.innerText = newPrice;
 }
